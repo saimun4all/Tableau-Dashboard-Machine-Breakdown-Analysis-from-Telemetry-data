@@ -583,7 +583,7 @@
       <layout-options>
         <title>
           <formatted-text>
-            <run bold='true' fontcolor='#3e817d'>&lt;Sheet Name&gt;</run>
+            <run bold='true' fontcolor='#3e817d' fontname='Tableau Regular'>&lt;Sheet Name&gt;</run>
           </formatted-text>
         </title>
       </layout-options>
@@ -621,7 +621,7 @@
             <column-instance column='[Calculation_1662954214825828353]' derivation='Sum' name='[sum:Calculation_1662954214825828353:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <filter class='categorical' column='[federated.04gngu41t4mmaw1dkx7kc09hzytq].[Action (Factory)]'>
-            <groupfilter function='level-members' level='[factory]' user:ui-action-filter='[Action1_4C9EA13C033D401784F102211FBF337B]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            <groupfilter function='member' level='[factory]' member='&quot;daikibo-factory-seiko&quot;' user:ui-action-filter='[Action1_4C9EA13C033D401784F102211FBF337B]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[federated.04gngu41t4mmaw1dkx7kc09hzytq].[Action (Factory)]</column>
@@ -722,7 +722,7 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='worksheet' name='Downtime Per Factory'>
+    <window class='worksheet' maximized='true' name='Downtime Per Factory'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -768,7 +768,7 @@
       </cards>
       <simple-id uuid='{EED1E0B3-805F-4656-8E31-A4EA12955712}' />
     </window>
-    <window class='dashboard' maximized='true' name='Dashboard 1'>
+    <window class='dashboard' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Downtime Per Factory'>
           <zoom type='entire-view' />
@@ -777,7 +777,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='5' />
+      <active id='3' />
       <simple-id uuid='{FFFC430A-CD13-459F-810D-F98280439F60}' />
     </window>
   </windows>
